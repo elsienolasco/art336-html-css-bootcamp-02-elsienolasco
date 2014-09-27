@@ -14,3 +14,65 @@ Globals
     font-size: $size;
     font-size: calculateRem($size);
 }
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Titillium WebThin'), local('TitilliumWeb-Thin'), url(http://fonts.gstatic.com/s/titilliumweb/v4/anMUvcNT0H1YN4FII8wpr5y09eZ1iiln_TwCvB69PRM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Titillium WebSemiBold'), local('TitilliumWeb-SemiBold'), url(http://fonts.gstatic.com/s/titilliumweb/v4/anMUvcNT0H1YN4FII8wpr0wm9nMzMeafAg8_--4kUmY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Titillium WebBold'), local('TitilliumWeb-Bold'), url(http://fonts.gstatic.com/s/titilliumweb/v4/anMUvcNT0H1YN4FII8wpr0vLCPf0EcV_rDFFqQeivHY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: italic;
+  font-weight: 200;
+  src: local('Titillium WebThin Italic'), local('TitilliumWeb-ThinItalic'), url(http://fonts.gstatic.com/s/titilliumweb/v4/RZunN20OBmkvrU7sA4GPPlCuNGgV_UvN6uY6fpWGk4X3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@mixin body-font-regular {
+    font-family: 'Titillium Web', helvetica, verdana, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+
+@mixin body-font-bold {
+    font-family: 'Titillium Web', helvetica, verdana, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+@mixin body-font-italic {
+    font-family: 'Titillium Web', helvetica, verdana, sans-serif;
+    font-style: italic;
+    font-weight: 200;
+}
+
+@mixin headline-font {
+    font-family: 'Titillium Web', helvetica, verdana, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+// Site Variables
+$background-color: #e6e3e3;
+$color: #242424;
+$color-title: #c45353;

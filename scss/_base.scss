@@ -125,6 +125,6 @@ main footer p {
 footer[role="contentinfo"] small {
     border-top: 1px #989898 solid;
     display: block;
-    @include fontSize(16px);
+    @include fontSize(10px);
     margin-bottom: 20px;
 }

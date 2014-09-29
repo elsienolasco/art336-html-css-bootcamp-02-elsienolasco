@@ -88,7 +88,6 @@ h1, h2, h3, {
 header h1 {
     @include fontSize(38px);
     color: $color-title;
-    margin: 15px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -97,13 +96,13 @@ header h1 + p {
     @include fontSize(38px);
     color: $color-title;
     text-align: center;
+    margin-top: none;
     text-transform: uppercase;
 }
 
 h1 {
     @include fontSize(35px);
     color: $color;
-    margin-bottom: 30px;
     text-transform: uppercase;
 }
 

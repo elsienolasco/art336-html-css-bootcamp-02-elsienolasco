@@ -31,44 +31,113 @@ img {
     //margin: 0;
 }
 
+a {
+    background-color: #FFA4A5;
+    border-radius: 4px;
+    color: $color;
+    @include body-font-italic;
+    padding: 0 4px 2px 4px;
+    transition: background-color 300ms linear;
+    transition: color 300ms linear;
+}
+
+a:hover {
+    background-color: lighten(#FFA4A5, 5%);
+    color: lighten($color, 40%);
+    transition: background-color 300ms linear;
+    transition: color 300ms linear;
+}
+
+b, strong {
+    @include body-font-bold;
+}
+
 figure {
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
 figcaption {
-    @include fontSize(14px);
+    @include fontSize(13px);
+    margin-top: none;
+}
+
+blockquote {
+    background-color: $color-title;
+    padding: 16px;
+    margin: 0;
+}
+
+blockquote p {
+    margin-top: 0;
+    color: #FFFFFF;
+}
+
+cite {
+    margin-top: 0;
+    color: #FFFFFF;
 }
 
 //
 
-h1, h2, h3 {
+h1, h2, h3, {
     @include headline-font;
     line-height: 1;
 }
 
 header h1 {
-    @include fontSize(175px);
-    margin: 0;
+    @include fontSize(38px);
+    color: $color-title;
+    margin: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header h1 + p {
+    @include fontSize(38px);
+    color: $color-title;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 h1 {
     @include fontSize(35px);
     color: $color;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-transform: uppercase;
 }
 
-h1 + p {
-    @include fontSize(30px);
-}
-
-article h1 {
+h2 {
+    @include fontSize(20px);
     color: $color-title;
-    @include fontSize (66px);
-    margin: 48px 0 48px 0;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
+
+
+h3 {
+    @include fontSize(20px);
+    color: $color-title;
+    text-transform: capitalize;
+}
+
+h4 {
+    @include fontSize(20px);
+    color: $color-title;
+    text-transform: capitalize;
+}
+
+h5 {
+    @include fontSize(20px);
+    color: $color-title;
+    text-transform: capitalize;
+}
+
+h6 {
+    @include fontSize(20px);
+    color: $color-title;
+    text-transform: capitalize;
+}
+
 
 article div {
     color: $color-title;
@@ -79,7 +148,10 @@ article div {
 
 dt {
     color: $color-title;
-    @include fontSize(none);
+    @include fontSize(16px);
+    @include body-font-bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 main footer {
@@ -98,6 +170,7 @@ main footer p {
 footer[role="contentinfo"] small {
     border-top: 1px #989898 solid;
     display: block;
-    @include fontSize(10px);
+    @include fontSize(15px);
     margin-bottom: 20px;
+    text-align: center;
 }
